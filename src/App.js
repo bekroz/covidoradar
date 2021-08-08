@@ -6,6 +6,8 @@ import MapInfo from './components/MapInfo';
 import TableInfo from './components/TableInfo';
 import { sortData } from './utils';
 import GraphInfo from './components/GraphInfo';
+import Author from './components/Author';
+
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -55,10 +57,11 @@ function App() {
       })
   };
   return (
+    <>
     <div className="app">
      <div className="app__left">
      <div className="app__header">
-        <h1>COVIDORADAR</h1>
+        <h1>Covido-Radar ☢️</h1>
         <FormControl className="app__dropdown">
           <Select variant="outlined" onChange={onCountrySelectionChange} value={country}>
             <MenuItem value="worldwide"> WorldWide</MenuItem>
@@ -74,6 +77,7 @@ function App() {
           <InfoBox title="Recovered:"cases={countryInfo.todayRecovered} total={countryInfo.recovered} />
           <InfoBox title="Deaths:" cases={countryInfo.todayDeaths} total={countryInfo.deaths} />
       </div>
+      
       <MapInfo />
      </div>
        <Card className="app__right">
@@ -87,6 +91,8 @@ function App() {
           </CardContent>
        </Card>
     </div>
+    <Author />
+    </>
   );
 }
 

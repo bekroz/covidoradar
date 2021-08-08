@@ -1,0 +1,46 @@
+.author {
+    border-top: 1px solid lightgray;
+    padding: 20px;
+    background-color: #f7f7f7;
+    bottom: 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.author > p {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.author__button {
+    width: 250px;
+    height: 50px;
+    background-color: black !important;
+    font-weight: 800 !important;
+    color: white !important;
+    box-shadow: 0px 6px 18px -9px rgba(0, 0, 0, 0.75) !important;
+    transition: transform 250ms ease-in !important;
+    cursor: pointer;
+}
+
+.author__button:hover {
+    color: #ff7779 !important;
+    background-color:  seagreen !important;
+    transform: scale(1.2) !important;
+  }
+
+.author__link {
+    text-decoration: none !important;
+    color: white;
+    font-weight: 800 !important;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+    font-weight: 500 !important;
+    font-size: 15px;
+}
